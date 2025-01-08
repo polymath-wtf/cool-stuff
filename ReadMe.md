@@ -69,12 +69,15 @@ source bin/activate
 cd /workspace/ComfyUI
 python main.py --listen 0.0.0.0 --port 8188
 ```
-- RunPod <=> Google Disc download https://colab.research.google.com/drive/13UMW1lbuxVRZOzZeHQfQPmZ05KHWNw7f
+- RunPod <=> Google Disc download notebook https://colab.research.google.com/drive/13UMW1lbuxVRZOzZeHQfQPmZ05KHWNw7f
 - Paste in new terminal
 ```
 wget --quiet --show-progress https://github.com/Run-Pod/runpodctl/releases/download/v1.6.1/runpodctl-linux-amd -O runpodctl && chmod +x runpodctl
 ```
-- thx https://youtu.be/D2uQufx3W94?si=ahwy1MprdZvauTfb&t=407
+Open terminal in folder with file and pase
 ```
-runpodctl send sd-v1-5-inpainting.ckpt
+runpodctl send <filename.blablabla>
+or
+runpodctl receive <link>
 ```
+- thx https://youtu.be/D2uQufx3W94?si=ahwy1MprdZvauTfb&t=407 for guide
