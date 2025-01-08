@@ -1,6 +1,6 @@
 # Ez install Runpod with 2 clicks
 
-Ez install Runpod ComfyUI
+- Ez install Runpod ComfyUI
 ```
 git clone https://github.com/comfyanonymous/ComfyUI
 cd ComfyUI
