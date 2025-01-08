@@ -74,7 +74,7 @@ python main.py --listen 0.0.0.0 --port 8188
 ```
 wget --quiet --show-progress https://github.com/Run-Pod/runpodctl/releases/download/v1.6.1/runpodctl-linux-amd -O runpodctl && chmod +x runpodctl
 ```
-- thx https://www.youtube.com/watch?v=D2uQufx3W94&t=114s
+- thx https://youtu.be/D2uQufx3W94?si=ahwy1MprdZvauTfb&t=407
 ```
 runpodctl send sd-v1-5-inpainting.ckpt
 ```
