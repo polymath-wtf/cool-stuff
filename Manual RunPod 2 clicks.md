@@ -1,34 +1,15 @@
 # cool-stuff
 Cool scripts and links
-- Clone ComfyUI Github
-```
+
 git clone https://github.com/comfyanonymous/ComfyUI
-```
-- Move into Comfyui and install venv
-```
 cd ComfyUI
 python -m venv venv
-```
-- Move into venv and start virtual machine
-```
 cd venv
 source bin/activate
-```
-- Instal dependencies for cu118 (may also for 121)
-```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-```
-- NvidiaGPU stuff for optimisation (cudnn also need,but idk mb its integrated in runpod) 
-```
 pip install -U --pre xformers
 cd ..
-```
-- Base dependencies
-```
 pip install -r requirements.txt
-```
-- Install ComfyUI manager (base for install other nodes)
-```
 cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 cd ..
