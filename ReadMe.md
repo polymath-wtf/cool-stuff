@@ -74,7 +74,7 @@ python main.py --listen 0.0.0.0 --port 8188
 ```
 wget --quiet --show-progress https://github.com/Run-Pod/runpodctl/releases/download/v1.6.1/runpodctl-linux-amd -O runpodctl && chmod +x runpodctl
 ```
-Open terminal in folder with file and pase
+Open terminal in folder with file and paste
 ```
 runpodctl send <filename.blablabla>
 or
