@@ -1,4 +1,6 @@
-# Ez install Runpod with 2 clicks
+# Cool scripts and links
+
+## Ez install Runpod with 2 clicks
 
 - Ez install Runpod ComfyUI
 ```
