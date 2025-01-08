@@ -1,5 +1,7 @@
 # cool-stuff
 Cool scripts and links
+
+Ez install Runpod ComfyUI
 ```
 git clone https://github.com/comfyanonymous/ComfyUI
 cd ComfyUI
