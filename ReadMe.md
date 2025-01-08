@@ -19,8 +19,7 @@ cd ..
 ```
 - Models for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
 ```
-cd /workspace/ComfyUI
-cd models
+cd /workspace/ComfyUI/models
 cd checkpoints
 wget --content-disposition https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE/resolve/main/Realistic_Vision_V5.1.safetensors
 cd ..
