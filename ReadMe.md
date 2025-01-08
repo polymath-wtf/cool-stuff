@@ -9,8 +9,7 @@ cd ComfyUI
 python -m venv venv
 cd venv
 source bin/activate
-pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-pip install -U --pre xformers
+pip3 install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu118
 cd ..
 pip install -r requirements.txt
 cd custom_nodes
