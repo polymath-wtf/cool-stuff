@@ -9,7 +9,7 @@ cd ComfyUI
 python -m venv venv
 cd venv
 source bin/activate
-pip3 install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu118
+pip3 install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu121
 cd ..
 pip install -r requirements.txt
 cd custom_nodes
@@ -21,6 +21,7 @@ cd ..
 cd /workspace/ComfyUI/models
 cd checkpoints
 wget --content-disposition https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE/resolve/main/Realistic_Vision_V5.1.safetensors
+wget --content-disposition https://civitai.com/api/download/models/304415
 cd ..
 mkdir animatediff_models
 cd animatediff_models
