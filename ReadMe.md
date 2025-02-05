@@ -22,6 +22,7 @@ cd /workspace/ComfyUI/models
 cd checkpoints
 wget --content-disposition https://huggingface.co/SG161222/Realistic_Vision_V5.1_noVAE/resolve/main/Realistic_Vision_V5.1.safetensors
 wget --content-disposition https://civitai.com/api/download/models/304415
+wget --content-disposition https://civitai.com/api/download/models/128713
 cd ..
 mkdir animatediff_models
 cd animatediff_models
