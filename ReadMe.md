@@ -16,7 +16,7 @@ cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 cd ..
 ```
-- Models for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
+## AnimateDiff pack for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
 ```
 cd /workspace/ComfyUI/models
 cd checkpoints
@@ -82,3 +82,28 @@ or
 runpodctl receive <link>
 ```
 - thx https://youtu.be/D2uQufx3W94?si=ahwy1MprdZvauTfb&t=407 for guide
+
+## Wan 2.1 pack
+Main
+https://huggingface.co/city96/Wan2.1-I2V-14B-480P-gguf/tree/main
+https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/tree/main
+
+Clip
+
+Vae
+
+Lora
+
+Controlnet
+Control 1.3B https://huggingface.co/alibaba-pai/Wan2.1-Fun-1.3B-Control/tree/main
+Inpaint 1.3B https://huggingface.co/alibaba-pai/Wan2.1-Fun-1.3B-InP
+
+Control 14B https://huggingface.co/alibaba-pai/Wan2.1-Fun-14B-Control
+Control 14B GGUF https://huggingface.co/city96/Wan2.1-Fun-14B-Control-gguf/tree/main
+Inpaint 14B https://huggingface.co/alibaba-pai/Wan2.1-Fun-14B-InP
+
+
+
+```
+моделей слишком дохуя пока хз
+```
