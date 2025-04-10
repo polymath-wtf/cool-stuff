@@ -95,12 +95,12 @@ Vae
 Lora
 
 Controlnet
-Control 1.3B https://huggingface.co/alibaba-pai/Wan2.1-Fun-1.3B-Control/tree/main
-Inpaint 1.3B https://huggingface.co/alibaba-pai/Wan2.1-Fun-1.3B-InP
-
-Control 14B https://huggingface.co/alibaba-pai/Wan2.1-Fun-14B-Control
-Control 14B GGUF https://huggingface.co/city96/Wan2.1-Fun-14B-Control-gguf/tree/main
-Inpaint 14B https://huggingface.co/alibaba-pai/Wan2.1-Fun-14B-InP
+Control 1.3B https://huggingface.co/alibaba-pai/Wan2.1-Fun-1.3B-Control/tree/main  
+Inpaint 1.3B https://huggingface.co/alibaba-pai/Wan2.1-Fun-1.3B-InP  
+  
+Control 14B https://huggingface.co/alibaba-pai/Wan2.1-Fun-14B-Control  
+Control 14B GGUF https://huggingface.co/city96/Wan2.1-Fun-14B-Control-gguf/tree/main  
+Inpaint 14B https://huggingface.co/alibaba-pai/Wan2.1-Fun-14B-InP  
 
 
 
