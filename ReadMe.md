@@ -85,8 +85,8 @@ runpodctl receive <link>
 
 ## Wan 2.1 pack
 Main
-https://huggingface.co/city96/Wan2.1-I2V-14B-480P-gguf/tree/main
-https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/tree/main
+480 gguf https://huggingface.co/city96/Wan2.1-I2V-14B-480P-gguf/tree/main  
+720 gguf https://huggingface.co/city96/Wan2.1-I2V-14B-720P-gguf/tree/main
 
 Clip
 
