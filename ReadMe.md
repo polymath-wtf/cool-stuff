@@ -19,7 +19,7 @@ cd ..
 Wan insta build
 ```
 cd /workspace/ComfyUI/models
-diffusion_models
+cd diffusion_models
 wget --content-disposition https://huggingface.co/QuantStack/Wan2.1_I2V_14B_FusionX-GGUF/resolve/main/Wan2.1_I2V_14B_FusionX-Q4_0.gguf
 wget --content-disposition https://huggingface.co/QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF/resolve/main/Wan2.1_T2V_14B_FusionX_VACE-Q4_0.gguf
 wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q4_0.gguf
@@ -33,8 +33,10 @@ cd lora
 mkdir wan
 cd wan
 mkdir quality
+cd quality
 wget --content-disposition https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
 wget --content-disposition  https://huggingface.co/lightx2v/Wan2.1-T2V-14B-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
+cd ..
 cd ..
 cd ..
 cd clip
@@ -43,6 +45,7 @@ wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_rep
 cd ..
 cd clip_vision
 wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
+cd ..
 
 ```
 ## AnimateDiff pack for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
