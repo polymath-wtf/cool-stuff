@@ -14,7 +14,21 @@ cd ..
 pip install -r requirements.txt
 cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
-cd ..
+git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
+git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git
+git clone https://github.com/kijai/ComfyUI-KJNodes.git
+git clone https://github.com/jags111/efficiency-nodes-comfyui.git
+git clone https://github.com/evanspearman/ComfyMath.git
+git clone https://github.com/crystian/comfyui-crystools.git
+git clone https://github.com/rgthree/rgthree-comfy.git
+git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+git clone https://github.com/calcuis/gguf.git
+git clone https://github.com/kijai/ComfyUI-WanVideoWrapper.git
+git clone https://github.com/pollockjj/ComfyUI-MultiGPU.git
+git clone https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
+git clone https://github.com/orssorbit/ComfyUI-wanBlockswap.git
+
 ```
 Wan insta build
 ```
