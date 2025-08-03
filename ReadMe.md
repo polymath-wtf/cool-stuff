@@ -28,6 +28,7 @@ git clone https://github.com/kijai/ComfyUI-WanVideoWrapper.git
 git clone https://github.com/pollockjj/ComfyUI-MultiGPU.git
 git clone https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
 git clone https://github.com/orssorbit/ComfyUI-wanBlockswap.git
+cd ..
 
 ```
 Wan insta build
