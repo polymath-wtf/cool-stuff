@@ -9,12 +9,41 @@ cd ComfyUI
 python -m venv venv
 cd venv
 source bin/activate
-pip3 install torch torchvision torchaudio xformers --index-url https://download.pytorch.org/whl/cu121
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
 cd ..
 pip install -r requirements.txt
 cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 cd ..
+```
+Wan insta build
+```
+cd /workspace/ComfyUI/models
+diffusion_models
+wget --content-disposition https://huggingface.co/QuantStack/Wan2.1_I2V_14B_FusionX-GGUF/resolve/main/Wan2.1_I2V_14B_FusionX-Q4_0.gguf
+wget --content-disposition https://huggingface.co/QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF/resolve/main/Wan2.1_T2V_14B_FusionX_VACE-Q4_0.gguf
+wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q4_0.gguf
+wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q4_0.gguf
+cd ..
+cd vae
+wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/VAE/Wan2.1_VAE.safetensors
+wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF/resolve/main/VAE/Wan2.2_VAE.safetensors
+cd ..
+cd lora
+mkdir wan
+cd wan
+mkdir quality
+wget --content-disposition https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
+wget --content-disposition  https://huggingface.co/lightx2v/Wan2.1-T2V-14B-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
+cd ..
+cd ..
+cd clip
+wget --content-disposition  https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q4_K_M.gguf
+wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+cd ..
+cd clip_vision
+wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
+
 ```
 ## AnimateDiff pack for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
 ```
