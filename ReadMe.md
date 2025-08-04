@@ -8,7 +8,8 @@ git clone https://github.com/comfyanonymous/ComfyUI
 cd ComfyUI
 python -m venv venv
 cd venv
-source bin/activate
+cd Scripts
+bin/activate
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
 cd ..
 pip install -r requirements.txt
