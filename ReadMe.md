@@ -10,7 +10,7 @@ python -m venv venv
 cd venv
 cd Scripts
 bin/activate
-pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
 cd ..
 pip install -r requirements.txt
 cd custom_nodes
