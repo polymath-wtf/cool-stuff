@@ -24,11 +24,13 @@ git clone https://github.com/crystian/comfyui-crystools.git
 git clone https://github.com/rgthree/rgthree-comfy.git
 git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git
 git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
-git clone https://github.com/calcuis/gguf.git
+git clone https://github.com/city96/ComfyUI-GGUF.git
 git clone https://github.com/kijai/ComfyUI-WanVideoWrapper.git
 git clone https://github.com/pollockjj/ComfyUI-MultiGPU.git
 git clone https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
 git clone https://github.com/orssorbit/ComfyUI-wanBlockswap.git
+git clone https://github.com/yolain/ComfyUI-Easy-Use.git
+git clone https://github.com/vrgamegirl19/comfyui-vrgamedevgirl.git
 cd ..
 
 ```
