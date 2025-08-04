@@ -5,14 +5,10 @@
 - Ez install Runpod ComfyUI
 ```
 git clone https://github.com/comfyanonymous/ComfyUI
-cd ComfyUI
-python -m venv venv
-cd venv
-cd Scripts
-bin/activate
+python -m venv /workspace/ComfyUI/venv
+source /workspace/ComfyUI/venv/bin/activate
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
-cd ..
-pip install -r requirements.txt
+pip install -r /workspace/ComfyUI/requirements.txt
 cd custom_nodes
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
