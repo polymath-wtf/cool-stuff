@@ -54,7 +54,6 @@ wget --content-disposition https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-S
 wget --content-disposition  https://huggingface.co/lightx2v/Wan2.1-T2V-14B-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
 cd ..
 cd ..
-cd ..
 cd clip
 wget --content-disposition  https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q4_K_M.gguf
 wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
