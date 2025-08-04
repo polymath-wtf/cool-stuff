@@ -31,6 +31,8 @@ git clone https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
 git clone https://github.com/orssorbit/ComfyUI-wanBlockswap.git
 git clone https://github.com/yolain/ComfyUI-Easy-Use.git
 git clone https://github.com/vrgamegirl19/comfyui-vrgamedevgirl.git
+git clone https://github.com/WASasquatch/was-node-suite-comfyui.git
+gie clone https://github.com/M1kep/ComfyLiterals.git
 cd ..
 
 ```
