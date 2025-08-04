@@ -10,58 +10,52 @@ source /workspace/ComfyUI/venv/bin/activate
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu128
 pip install -r /workspace/ComfyUI/requirements.txt
 cd custom_nodes
-git clone https://github.com/ltdrdata/ComfyUI-Manager.git
-git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git
-git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git
-git clone https://github.com/kijai/ComfyUI-KJNodes.git
-git clone https://github.com/jags111/efficiency-nodes-comfyui.git
-git clone https://github.com/evanspearman/ComfyMath.git
-git clone https://github.com/crystian/comfyui-crystools.git
-git clone https://github.com/rgthree/rgthree-comfy.git
-git clone https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git
-git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
-git clone https://github.com/city96/ComfyUI-GGUF.git
-git clone https://github.com/kijai/ComfyUI-WanVideoWrapper.git
-git clone https://github.com/pollockjj/ComfyUI-MultiGPU.git
-git clone https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git
-git clone https://github.com/orssorbit/ComfyUI-wanBlockswap.git
-git clone https://github.com/yolain/ComfyUI-Easy-Use.git
-git clone https://github.com/vrgamegirl19/comfyui-vrgamedevgirl.git
-git clone https://github.com/WASasquatch/was-node-suite-comfyui.git
-git clone https://github.com/M1kep/ComfyLiterals.git
+clone_and_install https://github.com/ltdrdata/ComfyUI-Manager.git ComfyUI-Manager
+clone_and_install https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git ComfyUI-VideoHelperSuite
+clone_and_install https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git ComfyUI-Frame-Interpolation
+clone_and_install https://github.com/kijai/ComfyUI-KJNodes.git ComfyUI-KJNodes
+clone_and_install https://github.com/jags111/efficiency-nodes-comfyui.git efficiency-nodes-comfyui
+clone_and_install https://github.com/evanspearman/ComfyMath.git ComfyMath
+clone_and_install https://github.com/crystian/comfyui-crystools.git comfyui-crystools
+clone_and_install https://github.com/rgthree/rgthree-comfy.git rgthree-comfy
+clone_and_install https://github.com/ltdrdata/ComfyUI-Inspire-Pack.git ComfyUI-Inspire-Pack
+clone_and_install https://github.com/ltdrdata/ComfyUI-Impact-Pack.git ComfyUI-Impact-Pack
+clone_and_install https://github.com/city96/ComfyUI-GGUF.git ComfyUI-GGUF
+clone_and_install https://github.com/kijai/ComfyUI-WanVideoWrapper.git ComfyUI-WanVideoWrapper
+clone_and_install https://github.com/pollockjj/ComfyUI-MultiGPU.git ComfyUI-MultiGPU
+clone_and_install https://github.com/Flow-two/ComfyUI-WanStartEndFramesNative.git ComfyUI-WanStartEndFramesNative
+clone_and_install https://github.com/orssorbit/ComfyUI-wanBlockswap.git ComfyUI-wanBlockswap
+clone_and_install https://github.com/yolain/ComfyUI-Easy-Use.git ComfyUI-Easy-Use
+clone_and_install https://github.com/vrgamegirl19/comfyui-vrgamedevgirl.git ComfyUI-vrgamedevgirl
+clone_and_install https://github.com/WASasquatch/was-node-suite-comfyui.git ComfyUI-was-node-suite-comfyui
+clone_and_install https://github.com/M1kep/ComfyLiterals.git ComfyUI-ComfyLiterals
+clone_and_install https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git ComfyUI-Custom-Scripts
+clone_and_install https://github.com/cubiq/ComfyUI_essentials.git ComfyUI_essentials
+clone_and_install https://github.com/spacepxl/ComfyUI-Image-Filters.git ComfyUI-Image-Filters
+clone_and_install https://github.com/jamesWalker55/comfyui-various.git ComfyUI-various
 cd ..
 
 ```
 Wan insta build
 ```
 cd /workspace/ComfyUI/models
-cd diffusion_models
-wget --content-disposition https://huggingface.co/QuantStack/Wan2.1_I2V_14B_FusionX-GGUF/resolve/main/Wan2.1_I2V_14B_FusionX-Q4_0.gguf
-wget --content-disposition https://huggingface.co/QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF/resolve/main/Wan2.1_T2V_14B_FusionX_VACE-Q4_0.gguf
-wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q4_0.gguf
-wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q4_0.gguf
-cd ..
-cd vae
-wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/VAE/Wan2.1_VAE.safetensors
-wget --content-disposition https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF/resolve/main/VAE/Wan2.2_VAE.safetensors
-cd ..
-cd lora
-mkdir wan
-cd wan
-mkdir quality
-cd quality
-wget --content-disposition https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
-wget --content-disposition  https://huggingface.co/lightx2v/Wan2.1-T2V-14B-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
-cd ..
-cd ..
-cd clip
-wget --content-disposition  https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q4_K_M.gguf
-wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
-cd ..
-cd clip_vision
-wget --content-disposition  https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
-cd ..
-
+# diffusion_models
+wget --content-disposition -P /workspace/ComfyUI/models/diffusion_models https://huggingface.co/QuantStack/Wan2.1_I2V_14B_FusionX-GGUF/resolve/main/Wan2.1_I2V_14B_FusionX-Q4_0.gguf
+wget --content-disposition -P /workspace/ComfyUI/models/diffusion_models https://huggingface.co/QuantStack/Wan2.1_T2V_14B_FusionX_VACE-GGUF/resolve/main/Wan2.1_T2V_14B_FusionX_VACE-Q4_0.gguf
+wget --content-disposition -P /workspace/ComfyUI/models/diffusion_models https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/LowNoise/Wan2.2-T2V-A14B-LowNoise-Q4_0.gguf
+wget --content-disposition -P /workspace/ComfyUI/models/diffusion_models https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/HighNoise/Wan2.2-T2V-A14B-HighNoise-Q4_0.gguf
+# vae
+wget --content-disposition -P /workspace/ComfyUI/models/vae https://huggingface.co/QuantStack/Wan2.2-T2V-A14B-GGUF/resolve/main/VAE/Wan2.1_VAE.safetensors
+wget --content-disposition -P /workspace/ComfyUI/models/vae https://huggingface.co/QuantStack/Wan2.2-TI2V-5B-GGUF/resolve/main/VAE/Wan2.2_VAE.safetensors
+# lora/wan/quality
+mkdir -p /workspace/ComfyUI/models/lora/wan/quality
+wget --content-disposition -P /workspace/ComfyUI/models/loras/wan/quality https://huggingface.co/lightx2v/Wan2.1-I2V-14B-480P-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_I2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
+wget --content-disposition -P /workspace/ComfyUI/models/loras/wan/quality https://huggingface.co/lightx2v/Wan2.1-T2V-14B-StepDistill-CfgDistill-Lightx2v/resolve/main/loras/Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank64.safetensors
+# clip
+wget --content-disposition -P /workspace/ComfyUI/models/clip https://huggingface.co/city96/umt5-xxl-encoder-gguf/resolve/main/umt5-xxl-encoder-Q4_K_M.gguf
+wget --content-disposition -P /workspace/ComfyUI/models/clip https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors
+# clip_vision
+wget --content-disposition -P /workspace/ComfyUI/models/clip_vision https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors
 ```
 ## AnimateDiff pack for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
 ```
