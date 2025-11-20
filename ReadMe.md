@@ -75,7 +75,7 @@ runpodctl receive <link>
 ```
 - thx https://youtu.be/D2uQufx3W94?si=ahwy1MprdZvauTfb&t=407 for guide
 
-### Models
+### Models итого 165 wan + qwen + flux
 # Wan 2.2 i2v + vace = 74gb
 ```
 cd /workspace/ComfyUI/models
