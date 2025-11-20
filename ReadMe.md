@@ -124,6 +124,8 @@ mv "/workspace/ComfyUI/models/loras/qwen/edit/镜头转换.safetensors" "/worksp
 wget --content-disposition -P /workspace/ComfyUI/models/loras/qwen/edit https://huggingface.co/dx8152/Qwen-Image-Edit-2509-Fusion/resolve/main/溶图.safetensors
 mv "/workspace/ComfyUI/models/loras/qwen/edit/溶图.safetensors" "/workspace/ComfyUI/models/loras/qwen/edit/qwen_edit_fusion.safetensors"
 wget --content-disposition -P /workspace/ComfyUI/models/loras/qwen/edit https://huggingface.co/lovis93/next-scene-qwen-image-lora-2509/resolve/main/next-scene_lora-v2-3000.safetensors
+wget --content-disposition -P /workspace/ComfyUI/models/loras/qwen/edit https://civitai.com/api/download/models/2226460?
+mv "/workspace/ComfyUI/models/loras/qwen/edit/溶图.safetensors" "/workspace/ComfyUI/models/loras/qwen/edit/qwen_edit_fusion.safetensors"
 ```
 # AnimateDiff pack for vid2vid SD 1.5: ControlNet, AnimateDiff, IpAdapter, vae, upscale
 ```
